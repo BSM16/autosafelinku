@@ -1,6 +1,6 @@
 var ac = window.location.hostname,
-    ab = 'https://kkklllliii887876h.blogspot.com';
-var ad = ['kkklllliii887876h.blogspot.com'];
+    ab = 'https://autosafelinku.blogspot.com';
+var ad = ['autosafelinku.blogspot.com'];
 function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
 loadCSS("https://rawcdn.githack.com/BSM16/autosafelinku/b8acf344f8d3b592c045c5b866c7a2819cc70f4c/_home.css");
 $(document).ready(function(){$("#btngenerate").on("click",function(){var e=$("#generateurl").val(),r=$("#generatelink"),a=$("#generateloading"),n=$("#resulturl");if(""==e)return $("#generateurl").focus(),!1;$("#copytoclipboard").html("<span class='fa fa-floppy-o'></span> Copy URL"),a.removeClass("hidden"),r.addClass("hidden"),$.ajax({url:"/feeds/posts/summary?alt=json-in-script",type:"get",dataType:"jsonp",success:function(t){var o="",l=t.feed.entry,s=new Array;if(void 0!==l){for(var i=0;i<l.length;i++){for(var d=0;d<l[i].link.length;d++)if("alternate"==l[i].link[d].rel){o=l[i].link[d].href;break}s[i]=o;var c=Math.random()*s.length;c=parseInt(c)}resultgenerate=s[c]+"#?o="+aesCrypto.encrypt(convertstr(e),convertstr("root")),a.addClass("hidden"),r.removeClass("hidden"),n.val(resultgenerate)}else n.val("No result!")},error:function(){n.val("Error loading feed!")}})}),new ClipboardJS(".copytoclipboard").on("success",function(e){$("#copytoclipboard").html("<span class='fa fa-check'></span> Link Copied to Clipboard")})});
