@@ -1,6 +1,8 @@
 var ac = window.location.hostname,
     ab = 'https://kkklllliii887876h.blogspot.com';
 var ad = ['kkklllliii887876h.blogspot.com'];
+function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+loadCSS("https://rawcdn.githack.com/BSM16/autosafelinku/b8acf344f8d3b592c045c5b866c7a2819cc70f4c/_post.css");
 function gotolinkcountdown() {
     var c = $('#btn-gotolink');
     c.text(wait_result);
